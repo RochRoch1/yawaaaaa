@@ -1,0 +1,591 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+}
+
+span {
+  color: #00b594;
+}
+
+.home {
+  width: 100%;
+  height: 10vh;
+}
+
+.home h1 {
+  font-family: 'Moderustic', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+  transform: translateY(20px);
+  margin-left: 80px;
+  font-size: 52px;
+}
+
+.content {
+  width: 100%; 
+}
+
+
+.home nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+  transform: translateX(-90px) translateY(-30px);
+}
+
+.home nav ul {
+  display: flex;
+  gap: 65px;
+}
+
+.home nav ul li {
+  list-style-type: none;
+}
+
+.home nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  transition: color 0.0001s ease;
+  font-family: 'Nunito', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+nav ul li a:hover {
+  color: #503c9b;
+  text-decoration: underline;
+}
+
+nav ul li a.active {
+  color: #503c9b;
+  text-decoration: underline;
+}
+
+.home-picture {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-picture img {
+  width: 730px;
+  height: 580px;
+  margin-right: 95px;
+  margin-bottom: 50px;
+}
+
+.lol {
+  margin-bottom: 50px;
+  margin-left: 95px;
+  background-color: #e8f4ff;
+  padding: 60px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.lol h2 {
+  font-family: 'Moderustic', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+  font-size: 80px;
+  text-align: center;
+  transform: translateY(-25px);
+}
+
+.lol p {
+  max-width: 420px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2;
+  word-spacing: 2px;
+  font-family: 'Nunito', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.bttn {
+  display: inline-block;
+  background-color: #00b594;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 7px 60px;
+  transform: translateY(25px);
+  font-family: 'Nunito', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-radius: 4px;
+}
+
+.bttn:hover {
+  background-color: #008f76;
+}
+
+.sign {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.yow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Moderustic', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+  font-size: 50px;
+}
+
+form label {
+  font-family: 'Nunito', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  margin-top: 20px;
+  font-size: 17px;
+  color: #c5c5c5;
+}
+
+form input {
+  width: 450px;
+  height: 50px;
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border-color: #c5c5c5;
+  border-radius: 4px;
+}
+
+.box {
+  display: flex;
+  margin-top: 10px;
+}
+
+.box input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #c5c5c5;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.box input[type='checkbox']:checked {
+  background-color: #fff;
+  border-color: #888;
+}
+
+.box input[type='checkbox']:checked::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  width: 25px;
+  height: 15px;
+  background-color: #008f76;
+  clip-path: polygon(0 50%, 25% 75%, 100% 0, 75% 0, 25% 50%);
+}
+
+.box input[type='checkbox']:hover {
+  border-color: #888;
+}
+
+.box p {
+  margin-left: 10px;
+  color: #c5c5c5;
+  font-family: 'Nunito', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.box li {
+  list-style-type: none;
+}
+
+.box li a {
+  margin-left: 210px;
+  display: flex;
+  justify-content: right;
+  font-weight: bold;
+  transition: color 0.0001s ease;
+  font-family: 'Nunito', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.box li a:hover {
+  color: #5937d4;
+}
+
+.yey {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.eh {
+  display: inline-block;
+  background-color: #00b594;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 7px 195px;
+  transform: translateY(25px);
+  font-family: 'Nunito', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-radius: 4px;
+}
+
+.eh:hover {
+  background-color: #008f76;
+}
+
+.oye {
+  margin-bottom: 40px;
+}
+
+.navi {
+  width: 15%;
+  height: 100vh;
+  background-color: #00b594;
+  float: left;
+}
+
+.navi h1 {
+  font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.navi span {
+  color: #ffffff;
+}
+
+.nav-bar li {
+  list-style-type: none;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  padding-left: 50px;
+}
+
+.nav-bar li a i {
+  color: white;
+  justify-content: center;
+  display: flex;
+}
+
+.all-notes i {
+  margin-right: 25px;
+}
+
+.favorites i {
+  margin-right: 24px;
+  margin-left: -2px;
+}
+
+.archives i {
+  margin-right: 24px;
+  margin-left: -7px;
+}
+
+.logout i {
+  margin-right: 27px;
+  margin-left: -5px;
+}
+
+.nav-bar li a:hover {
+  background-color: #008f76;
+  color: #ffffff;
+}
+
+.choose {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.Notes h1 {
+  margin-left: 320px;
+  padding-top: 30px;
+}
+
+.yep {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.nav-bar {
+  list-style: none;
+  padding: 0;
+}
+.nav-bar li {
+  margin: 20px 0;
+}
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.nav-bar a i {
+  margin-right: 10px;
+}
+.user {
+  padding-left: 20px;
+  margin-top: 400px;
+  text-align: center;
+}
+.user img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+.content {
+  flex-grow: 1;
+  padding: 40px;
+}
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.shesh {
+  width: 85%;
+  height: 10vh;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 0 20px; 
+}
+
+.shesh h2 {
+  text-decoration: none; 
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0; 
+  position: relative; 
+}
+
+.shesh h2::after {
+  content: ''; 
+  position: absolute; 
+  left: 0px;
+  bottom: -5px; 
+  width: 87%; 
+  height: 3px; 
+  background-color: #008f76; 
+}
+
+.search-container {
+  display: flex; 
+  align-items: center; 
+}
+
+.search-bar {
+  display: flex; 
+  align-items: center; 
+  margin: 0;
+}
+
+.search-bar input {
+  width: 330px; 
+  height: 40px; 
+  padding: 0 20px;
+  border: 1px solid #ccc; 
+  border-radius: 20px; 
+  font-size: 16px; 
+  margin-right: 15px; 
+}
+
+.plus-button {
+  height: 30px;
+  width: 30px;
+  border: 2px solid rgb(0, 0, 0); 
+  border-radius: 50%; 
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; 
+  margin-right: 2px;
+}
+
+.search-bar p{
+  text-decoration: none; 
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer; 
+}
+
+.body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  height: 90vh;
+  width: 85%;
+  margin: 0;
+  overflow-y: auto; 
+}
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 380px);
+  gap: 20px;
+  padding-left: 20px;
+}
+.notes-grid b {
+  font-weight: bold;
+  color: black;
+  margin-left: 50px;
+  display: flex;
+}
+.note {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(5, 5, 5, 0.1);
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  height: 240px;
+  width: 380px;
+  position: relative; /* Add this */
+}
+
+.note h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.note p {
+  font-size: 16px;
+  color: #666;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 100px;
+}
+
+.note-footer .dots {
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+}
+
+.note-footer p {
+  font-size: 14px;
+  color: #999;
+  padding-left: 210px;
+}
+
+.dots button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+}
+
+/* New CSS for positioning the dots button */
+.b.dots {
+  position: relative; /* Add this */
+  top: 10px; /* Adjust this value to position it as needed */
+  right: 10px; /* Adjust this value to position it as needed */
+}
+
+
+.note-branding {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  margin: 0 0px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  transition: transform 0.3s ease;
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 3px;
+}
+
+.menu-button.active .dot {
+  transform: scale(1.2);
+}
+
+
+.note-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
